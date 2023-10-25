@@ -1,0 +1,7 @@
+body {
+  background-image: image-set(image-url('background01.webp') 1x, image-url('background01.jpg') 1x);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

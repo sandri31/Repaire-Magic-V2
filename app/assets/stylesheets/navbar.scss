@@ -1,0 +1,70 @@
+.container-fluid .navbar-brand {
+  color: white;
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  color: white;
+}
+
+.navbar-nav .nav-link:not(.no-animation)::before {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:not(.no-animation):hover::before {
+  width: 100%;
+}
+
+.modal-content {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-toggler {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(60px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.btn-close-yellow {
+  background-image: url("data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\" fill=\"white\"><path d=\"M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z\"/></svg>");
+}
+
+.yellow-username {
+  color: yellow !important;
+}
+
+.white-text {
+  color: white !important;
+}
+
+.rounded-circle {
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 1000px) {
+  .modal-content {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+  }
+}
+
+.gray-background .form-control {
+  background-color: gray;
+}
+
+.form-control.disabled {
+  background-color: gray;
+}

@@ -1,0 +1,12 @@
+<% if resource.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(resource.errors.count, "erreur") %> empêché ce(tte) utilisateur d'être sauvegardé(e) :</h2>
+    <ul>
+      <% resource.errors.each do |attr, msg| %>
+        <% unless attr.to_s == 'current_password' %>
+          <li><%= "#{resource.class.human_attribute_name(attr)} #{msg}" %></li>
+        <% end %>
+      <% end %>
+    </ul>
+  </div>
+<% end %>

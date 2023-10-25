@@ -1,0 +1,26 @@
+<div class="modal position-static d-block" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header p-5 pb-4 border-bottom-0">
+        <h5 class="fw-bold mb-0 fs-2 text-white">Réinitialiser votre mot de passe</h5>
+      </div>
+      <div class="modal-body p-5 pt-0">
+        <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put, class: "form" }) do |f| %>
+          <%= render "devise/shared/error_messages", resource: resource %>
+          <%= f.hidden_field :reset_password_token %>
+
+          <div class="form-floating mb-3">
+            <%= f.password_field :password, autocomplete: "new-password", class: "form-control rounded-3", id: "floatingPassword", placeholder: "Password", required: true %>
+            <%= f.label :password, "Mot de passe", for: "floatingPassword" %>
+          </div>
+
+          <div class="form-floating mb-3">
+            <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control rounded-3", id: "floatingPasswordConfirmation", placeholder: "Password Confirmation", required: true %>
+            <%= f.label :password_confirmation, "Confirmation du mot de passe", for: "floatingPasswordConfirmation" %>
+          </div>
+          <button class="w-100 mb-2 btn btn-lg rounded-3 btn-warning" type="submit">Changer de mot de passe</button>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

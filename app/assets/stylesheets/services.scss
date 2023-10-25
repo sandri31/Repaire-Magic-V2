@@ -1,0 +1,17 @@
+.static_pages-services {
+  background-image: image-set(image-url('background.webp') 1x, image-url('background.jpg') 1x);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.static_pages-services footer {
+  a {
+    color: black;
+  }
+
+  a:hover {
+    color: rgba(15, 15, 15, 0.562);
+  }
+}
