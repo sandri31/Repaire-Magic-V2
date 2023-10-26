@@ -17,7 +17,7 @@ gem 'turbo-rails'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 gem 'bcrypt', '~> 3.1.7'
-gem 'bootstrap', '~> 5.2', '>= 5.2.3'
+gem 'bootstrap', '~> 5.3', '>= 5.3.1'
 gem 'devise', '~> 4.9', '>= 4.9.2'
 gem 'omniauth-github', '~> 2.0', '>= 2.0.1'
 gem 'omniauth-google-oauth2', '~> 1.1', '>= 1.1.1'
